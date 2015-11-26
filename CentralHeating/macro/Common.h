@@ -9,6 +9,9 @@
 #ifndef Common_h
 #define Common_h
 
+//performSelector函数调用警告消除
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+
 //单例定义
 #pragma mark -
 #pragma mark 单例定义

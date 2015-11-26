@@ -7,31 +7,20 @@
 //
 
 #import "WebAPI.h"
-#import "AFNetworking.h"
+#import "AFHTTPRequestOperationManager.h"
 
 @implementation WebAPI
 SYNTHESIZE_SINGLETON_FOR_CLASS(WebAPI)
 
 - (void)get:(NSTimeInterval)timeout :(BOOL)showWait :(id)handle :(NSString *)url :(NSString *)info :(SEL)success :(SEL)failed {
-    MBProgressHUD * HUD;
-    if (showWait) {
-        HUD = [self showWait:handle: info];
-    }
-    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.requestSerializer.timeoutInterval = timeout;
     
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (showWait) {
-            [self hideWait:HUD];
-        }
         if (success != nil) {
             [handle performSelector:success withObject:responseObject];
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (showWait) {
-            [self hideWait:HUD];
-        }
         if (failed != nil) {
             [handle performSelector:failed withObject:error];
         }
@@ -47,27 +36,14 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(WebAPI)
     
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-#ifndef USE_JSON_DATA
-    NSString *data = AFQueryStringFromParametersWithEncoding(param, NSUTF8StringEncoding);
-#else //USE_JSON_DATA
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:param options:NSJSONWritingPrettyPrinted error:nil];
     NSString *data = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-#endif //USE_JSON_DATA
     
-    MBProgressHUD * HUD;
-    if (showWait) {
-        HUD = [self showWait:handle: info];
-    }
     NSLog(@"postData:url=%@\nparam=%@",url, data);
-    NSLog(@"postEncryptData:param=%@", [NSDictionary dictionaryWithObjectsAndKeys:__BASE64(data, key), @"data" ,nil]);
-    [manager POST:url parameters:[NSDictionary dictionaryWithObjectsAndKeys:__BASE64(data, key), @"data" ,nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (showWait) {
-            [self hideWait:HUD];
-        }
+    [manager POST:url parameters:[NSDictionary dictionaryWithObjectsAndKeys:data, @"data" ,nil] success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *encryptData = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSData *decryptData = [__TEXT(encryptData, key) dataUsingEncoding:NSUTF8StringEncoding];
+        NSData *decryptData = [encryptData dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary * dictionary = [NSJSONSerialization JSONObjectWithData:decryptData options:NSJSONReadingMutableLeaves error:nil];
-        NSLog(@"backData:url=%@\nparam=%@",url,__TEXT(encryptData, key));
         
         if (dictionary != nil) {
             if (success != nil) {
@@ -80,9 +56,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(WebAPI)
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"net error: url=%@",url);
-        if (showWait) {
-            [self hideWait:HUD];
-        }
         if (failed != nil) {
             [handle performSelector:failed withObject:error];
         }
