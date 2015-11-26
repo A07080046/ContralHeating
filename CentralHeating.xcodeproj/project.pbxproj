@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F340CA54F053858D2F259257 /* libPods-CentralHeating.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F95AC103A06AF75991479A66 /* libPods-CentralHeating.a */; };
+		FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353941C06920A00A3DEE8 /* WebAPI.m */; };
 		FE2D71F41C05A73100678497 /* CentralHeatingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71F31C05A73100678497 /* CentralHeatingTests.m */; };
 		FE2D71FF1C05A73100678497 /* CentralHeatingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71FE1C05A73100678497 /* CentralHeatingUITests.m */; };
 		FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D72131C05ABAD00678497 /* FirstViewController.m */; };
@@ -40,6 +41,9 @@
 		939B10B90C0FE9D207F966A4 /* Pods-CentralHeating.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CentralHeating.release.xcconfig"; path = "Pods/Target Support Files/Pods-CentralHeating/Pods-CentralHeating.release.xcconfig"; sourceTree = "<group>"; };
 		F95AC103A06AF75991479A66 /* libPods-CentralHeating.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CentralHeating.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB54A2587ADABD20888D73CA /* Pods-CentralHeating.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CentralHeating.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CentralHeating/Pods-CentralHeating.debug.xcconfig"; sourceTree = "<group>"; };
+		FE1353931C06920A00A3DEE8 /* WebAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAPI.h; sourceTree = "<group>"; };
+		FE1353941C06920A00A3DEE8 /* WebAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAPI.m; sourceTree = "<group>"; };
+		FE1353961C06929A00A3DEE8 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		FE2D71D31C05A73000678497 /* CentralHeating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentralHeating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71EF1C05A73100678497 /* CentralHeatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CentralHeatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71F31C05A73100678497 /* CentralHeatingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralHeatingTests.m; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE1353891C0690A700A3DEE8 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				FE1353931C06920A00A3DEE8 /* WebAPI.h */,
+				FE1353941C06920A00A3DEE8 /* WebAPI.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
 		FE2D71CA1C05A73000678497 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +172,7 @@
 		FE2D720C1C05AA5C00678497 /* general */ = {
 			isa = PBXGroup;
 			children = (
+				FE1353891C0690A700A3DEE8 /* net */,
 			);
 			path = general;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 		FE2D720D1C05AA5C00678497 /* macro */ = {
 			isa = PBXGroup;
 			children = (
+				FE1353961C06929A00A3DEE8 /* Common.h */,
 			);
 			path = macro;
 			sourceTree = "<group>";
@@ -374,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */,
 				FE2D72171C05ABAD00678497 /* SecondViewController.m in Sources */,
 				FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */,
 				FE2D721E1C05ABDA00678497 /* main.m in Sources */,
