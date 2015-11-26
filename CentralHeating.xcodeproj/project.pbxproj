@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F340CA54F053858D2F259257 /* libPods-CentralHeating.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F95AC103A06AF75991479A66 /* libPods-CentralHeating.a */; };
 		FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353941C06920A00A3DEE8 /* WebAPI.m */; };
+		FE1353991C06D6A500A3DEE8 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */; };
+		FE13539C1C06DAEF00A3DEE8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */; };
 		FE2D71F41C05A73100678497 /* CentralHeatingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71F31C05A73100678497 /* CentralHeatingTests.m */; };
 		FE2D71FF1C05A73100678497 /* CentralHeatingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71FE1C05A73100678497 /* CentralHeatingUITests.m */; };
 		FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D72131C05ABAD00678497 /* FirstViewController.m */; };
@@ -44,6 +46,10 @@
 		FE1353931C06920A00A3DEE8 /* WebAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAPI.h; sourceTree = "<group>"; };
 		FE1353941C06920A00A3DEE8 /* WebAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAPI.m; sourceTree = "<group>"; };
 		FE1353961C06929A00A3DEE8 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		FE1353971C06D6A500A3DEE8 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		FE13539A1C06DAEF00A3DEE8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FE2D71D31C05A73000678497 /* CentralHeating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentralHeating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71EF1C05A73100678497 /* CentralHeatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CentralHeatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71F31C05A73100678497 /* CentralHeatingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralHeatingTests.m; sourceTree = "<group>"; };
@@ -211,6 +217,10 @@
 				FE2D72131C05ABAD00678497 /* FirstViewController.m */,
 				FE2D72141C05ABAD00678497 /* SecondViewController.h */,
 				FE2D72151C05ABAD00678497 /* SecondViewController.m */,
+				FE1353971C06D6A500A3DEE8 /* MainTabBarController.h */,
+				FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */,
+				FE13539A1C06DAEF00A3DEE8 /* RootViewController.h */,
+				FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */,
 			);
 			path = sections;
 			sourceTree = "<group>";
@@ -390,7 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */,
+				FE13539C1C06DAEF00A3DEE8 /* RootViewController.m in Sources */,
 				FE2D72171C05ABAD00678497 /* SecondViewController.m in Sources */,
+				FE1353991C06D6A500A3DEE8 /* MainTabBarController.m in Sources */,
 				FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */,
 				FE2D721E1C05ABDA00678497 /* main.m in Sources */,
 				FE2D721C1C05ABDA00678497 /* AppDelegate.m in Sources */,
