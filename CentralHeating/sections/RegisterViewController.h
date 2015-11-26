@@ -1,5 +1,5 @@
 //
-//  MainTabBarController.h
+//  RegisterViewController.h
 //  CentralHeating
 //
 //  Created by ghg on 15/11/26.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainTabBarController : UITabBarController
+@interface RegisterViewController : UIViewController
+- (IBAction)clickCommit;
 
 @end

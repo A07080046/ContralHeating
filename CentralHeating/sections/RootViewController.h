@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ICETutorialController.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController<ICETutorialControllerDelegate>
 
 @end

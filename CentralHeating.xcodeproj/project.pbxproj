@@ -11,6 +11,8 @@
 		FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353941C06920A00A3DEE8 /* WebAPI.m */; };
 		FE1353991C06D6A500A3DEE8 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */; };
 		FE13539C1C06DAEF00A3DEE8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */; };
+		FE13539F1C06EA7300A3DEE8 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13539E1C06EA7300A3DEE8 /* RegisterViewController.m */; };
+		FE1353A21C06EA8000A3DEE8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353A11C06EA8000A3DEE8 /* LoginViewController.m */; };
 		FE2D71F41C05A73100678497 /* CentralHeatingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71F31C05A73100678497 /* CentralHeatingTests.m */; };
 		FE2D71FF1C05A73100678497 /* CentralHeatingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71FE1C05A73100678497 /* CentralHeatingUITests.m */; };
 		FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D72131C05ABAD00678497 /* FirstViewController.m */; };
@@ -50,6 +52,10 @@
 		FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		FE13539A1C06DAEF00A3DEE8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FE13539D1C06EA7300A3DEE8 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FE13539E1C06EA7300A3DEE8 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FE1353A01C06EA8000A3DEE8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FE1353A11C06EA8000A3DEE8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FE2D71D31C05A73000678497 /* CentralHeating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentralHeating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71EF1C05A73100678497 /* CentralHeatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CentralHeatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71F31C05A73100678497 /* CentralHeatingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralHeatingTests.m; sourceTree = "<group>"; };
@@ -221,6 +227,10 @@
 				FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */,
 				FE13539A1C06DAEF00A3DEE8 /* RootViewController.h */,
 				FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */,
+				FE13539D1C06EA7300A3DEE8 /* RegisterViewController.h */,
+				FE13539E1C06EA7300A3DEE8 /* RegisterViewController.m */,
+				FE1353A01C06EA8000A3DEE8 /* LoginViewController.h */,
+				FE1353A11C06EA8000A3DEE8 /* LoginViewController.m */,
 			);
 			path = sections;
 			sourceTree = "<group>";
@@ -404,8 +414,10 @@
 				FE2D72171C05ABAD00678497 /* SecondViewController.m in Sources */,
 				FE1353991C06D6A500A3DEE8 /* MainTabBarController.m in Sources */,
 				FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */,
+				FE1353A21C06EA8000A3DEE8 /* LoginViewController.m in Sources */,
 				FE2D721E1C05ABDA00678497 /* main.m in Sources */,
 				FE2D721C1C05ABDA00678497 /* AppDelegate.m in Sources */,
+				FE13539F1C06EA7300A3DEE8 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
