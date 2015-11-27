@@ -56,6 +56,7 @@
 		FE13539E1C06EA7300A3DEE8 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		FE1353A01C06EA8000A3DEE8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FE1353A11C06EA8000A3DEE8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FE282B471C07F11B001BA331 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		FE2D71D31C05A73000678497 /* CentralHeating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentralHeating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71EF1C05A73100678497 /* CentralHeatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CentralHeatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71F31C05A73100678497 /* CentralHeatingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralHeatingTests.m; sourceTree = "<group>"; };
@@ -193,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				FE1353961C06929A00A3DEE8 /* Common.h */,
+				FE282B471C07F11B001BA331 /* Router.h */,
 			);
 			path = macro;
 			sourceTree = "<group>";

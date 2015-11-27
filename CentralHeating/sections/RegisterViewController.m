@@ -7,6 +7,7 @@
 //
 
 #import "RegisterViewController.h"
+#import "Router.h"
 
 @interface RegisterViewController ()
 
@@ -30,6 +31,9 @@
 }
 
 - (IBAction)clickCommit {
-    [self.navigationController pushViewController: [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"] animated:YES];
+    GET2(ROUTE_TEST);
+//    NSDictionary *parameters = [[NSDictionary alloc]initWithObjectsAndKeys: @"", @"userId",nil];
+//    POST2(ROUTE_TEST, parameters);
+//    [self.navigationController pushViewController: [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"] animated:YES];
 }
 @end
