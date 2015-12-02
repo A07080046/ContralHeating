@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8BC9EB3556007EB1C3A8E608"
+               BlueprintIdentifier = "634E48FF58EF7A4DF35A0805"
                BuildableName = "libICETutorial.a"
                BlueprintName = "ICETutorial"
                ReferencedContainer = "container:Pods.xcodeproj">

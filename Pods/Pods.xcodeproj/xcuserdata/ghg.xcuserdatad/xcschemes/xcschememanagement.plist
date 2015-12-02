@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaAsyncSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ICETutorial.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,20 +29,40 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XMPPFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6BB45CA8F9098EC415C9C84C46FA81BD</key>
+		<key>49C75BE5CCE0EBE630D0750DB621F27D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5BD765FC4950E5FFA0DC8F5ECA5780C</key>
+		<key>82057390DB345E0F1367307EAFBB11A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E11131FD8851346C497AE5540E15A736</key>
+		<key>8937AD42611DD9062D71E1DD1AF77EDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E5D381F5B6D12AC60557DB475063979</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8472070DB8F6B1EBA5D49DA30BBA4C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF0E9BE41CDDFE4A5E052BC8C956936E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

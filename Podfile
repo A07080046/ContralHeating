@@ -4,6 +4,7 @@
 target 'CentralHeating' do
 pod 'AFNetworking', '~> 2.6.3'
 pod 'ICETutorial', '~> 1.1.1'
+pod 'XMPPFramework', '~> 3.6.6'
 end
 
 target 'CentralHeatingTests' do
