@@ -31,9 +31,9 @@
 }
 
 - (IBAction)clickCommit {
-    GET2(ROUTE_TEST);
+//    GET2(ROUTE_TEST);
 //    NSDictionary *parameters = [[NSDictionary alloc]initWithObjectsAndKeys: @"", @"userId",nil];
 //    POST2(ROUTE_TEST, parameters);
-//    [self.navigationController pushViewController: [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"] animated:YES];
+    [self.navigationController pushViewController: [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"] animated:YES];
 }
 @end

@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F340CA54F053858D2F259257 /* libPods-CentralHeating.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F95AC103A06AF75991479A66 /* libPods-CentralHeating.a */; };
+		FE01E52F1C0EA42D00D24CDE /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E52E1C0EA42D00D24CDE /* MainTabBarController.m */; };
+		FE01E5361C0EA48500D24CDE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5311C0EA48500D24CDE /* LoginViewController.m */; };
+		FE01E5371C0EA48500D24CDE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5331C0EA48500D24CDE /* RegisterViewController.m */; };
+		FE01E5381C0EA48500D24CDE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5351C0EA48500D24CDE /* RootViewController.m */; };
 		FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353941C06920A00A3DEE8 /* WebAPI.m */; };
-		FE1353991C06D6A500A3DEE8 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */; };
-		FE13539C1C06DAEF00A3DEE8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */; };
-		FE13539F1C06EA7300A3DEE8 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13539E1C06EA7300A3DEE8 /* RegisterViewController.m */; };
-		FE1353A21C06EA8000A3DEE8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353A11C06EA8000A3DEE8 /* LoginViewController.m */; };
 		FE2D71F41C05A73100678497 /* CentralHeatingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71F31C05A73100678497 /* CentralHeatingTests.m */; };
 		FE2D71FF1C05A73100678497 /* CentralHeatingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71FE1C05A73100678497 /* CentralHeatingUITests.m */; };
-		FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D72131C05ABAD00678497 /* FirstViewController.m */; };
-		FE2D72171C05ABAD00678497 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D72151C05ABAD00678497 /* SecondViewController.m */; };
 		FE2D721C1C05ABDA00678497 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D72191C05ABDA00678497 /* AppDelegate.m */; };
 		FE2D721E1C05ABDA00678497 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D721B1C05ABDA00678497 /* main.m */; };
 		FE2D72201C05ABFE00678497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2D721F1C05ABFE00678497 /* Assets.xcassets */; };
@@ -45,17 +43,17 @@
 		939B10B90C0FE9D207F966A4 /* Pods-CentralHeating.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CentralHeating.release.xcconfig"; path = "Pods/Target Support Files/Pods-CentralHeating/Pods-CentralHeating.release.xcconfig"; sourceTree = "<group>"; };
 		F95AC103A06AF75991479A66 /* libPods-CentralHeating.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CentralHeating.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB54A2587ADABD20888D73CA /* Pods-CentralHeating.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CentralHeating.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CentralHeating/Pods-CentralHeating.debug.xcconfig"; sourceTree = "<group>"; };
+		FE01E52D1C0EA42D00D24CDE /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		FE01E52E1C0EA42D00D24CDE /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		FE01E5301C0EA48500D24CDE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FE01E5311C0EA48500D24CDE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FE01E5321C0EA48500D24CDE /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FE01E5331C0EA48500D24CDE /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		FE01E5341C0EA48500D24CDE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FE01E5351C0EA48500D24CDE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		FE1353931C06920A00A3DEE8 /* WebAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAPI.h; sourceTree = "<group>"; };
 		FE1353941C06920A00A3DEE8 /* WebAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAPI.m; sourceTree = "<group>"; };
 		FE1353961C06929A00A3DEE8 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		FE1353971C06D6A500A3DEE8 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
-		FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
-		FE13539A1C06DAEF00A3DEE8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		FE13539D1C06EA7300A3DEE8 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		FE13539E1C06EA7300A3DEE8 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		FE1353A01C06EA8000A3DEE8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		FE1353A11C06EA8000A3DEE8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FE282B471C07F11B001BA331 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		FE2D71D31C05A73000678497 /* CentralHeating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CentralHeating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71EF1C05A73100678497 /* CentralHeatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CentralHeatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,10 +62,6 @@
 		FE2D71FA1C05A73100678497 /* CentralHeatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CentralHeatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2D71FE1C05A73100678497 /* CentralHeatingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralHeatingUITests.m; sourceTree = "<group>"; };
 		FE2D72001C05A73100678497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE2D72121C05ABAD00678497 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FE2D72131C05ABAD00678497 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FE2D72141C05ABAD00678497 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FE2D72151C05ABAD00678497 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FE2D72181C05ABDA00678497 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE2D72191C05ABDA00678497 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FE2D721A1C05ABDA00678497 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +112,76 @@
 				939B10B90C0FE9D207F966A4 /* Pods-CentralHeating.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE01E5251C0EA2B500D24CDE /* home */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E5271C0EA3A100D24CDE /* data */,
+				FE01E5281C0EA3A100D24CDE /* delegate */,
+				FE01E5291C0EA3A100D24CDE /* view */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		FE01E5261C0EA2B500D24CDE /* login */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E52A1C0EA3AC00D24CDE /* data */,
+				FE01E52B1C0EA3AC00D24CDE /* delegate */,
+				FE01E52C1C0EA3AC00D24CDE /* view */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		FE01E5271C0EA3A100D24CDE /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FE01E5281C0EA3A100D24CDE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		FE01E5291C0EA3A100D24CDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E52D1C0EA42D00D24CDE /* MainTabBarController.h */,
+				FE01E52E1C0EA42D00D24CDE /* MainTabBarController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FE01E52A1C0EA3AC00D24CDE /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FE01E52B1C0EA3AC00D24CDE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		FE01E52C1C0EA3AC00D24CDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E5301C0EA48500D24CDE /* LoginViewController.h */,
+				FE01E5311C0EA48500D24CDE /* LoginViewController.m */,
+				FE01E5321C0EA48500D24CDE /* RegisterViewController.h */,
+				FE01E5331C0EA48500D24CDE /* RegisterViewController.m */,
+				FE01E5341C0EA48500D24CDE /* RootViewController.h */,
+				FE01E5351C0EA48500D24CDE /* RootViewController.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		FE1353891C0690A700A3DEE8 /* net */ = {
@@ -221,18 +285,8 @@
 		FE2D72101C05AA5C00678497 /* sections */ = {
 			isa = PBXGroup;
 			children = (
-				FE2D72121C05ABAD00678497 /* FirstViewController.h */,
-				FE2D72131C05ABAD00678497 /* FirstViewController.m */,
-				FE2D72141C05ABAD00678497 /* SecondViewController.h */,
-				FE2D72151C05ABAD00678497 /* SecondViewController.m */,
-				FE1353971C06D6A500A3DEE8 /* MainTabBarController.h */,
-				FE1353981C06D6A500A3DEE8 /* MainTabBarController.m */,
-				FE13539A1C06DAEF00A3DEE8 /* RootViewController.h */,
-				FE13539B1C06DAEF00A3DEE8 /* RootViewController.m */,
-				FE13539D1C06EA7300A3DEE8 /* RegisterViewController.h */,
-				FE13539E1C06EA7300A3DEE8 /* RegisterViewController.m */,
-				FE1353A01C06EA8000A3DEE8 /* LoginViewController.h */,
-				FE1353A11C06EA8000A3DEE8 /* LoginViewController.m */,
+				FE01E5251C0EA2B500D24CDE /* home */,
+				FE01E5261C0EA2B500D24CDE /* login */,
 			);
 			path = sections;
 			sourceTree = "<group>";
@@ -412,14 +466,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */,
-				FE13539C1C06DAEF00A3DEE8 /* RootViewController.m in Sources */,
-				FE2D72171C05ABAD00678497 /* SecondViewController.m in Sources */,
-				FE1353991C06D6A500A3DEE8 /* MainTabBarController.m in Sources */,
-				FE2D72161C05ABAD00678497 /* FirstViewController.m in Sources */,
-				FE1353A21C06EA8000A3DEE8 /* LoginViewController.m in Sources */,
+				FE01E5381C0EA48500D24CDE /* RootViewController.m in Sources */,
+				FE01E5371C0EA48500D24CDE /* RegisterViewController.m in Sources */,
+				FE01E52F1C0EA42D00D24CDE /* MainTabBarController.m in Sources */,
 				FE2D721E1C05ABDA00678497 /* main.m in Sources */,
 				FE2D721C1C05ABDA00678497 /* AppDelegate.m in Sources */,
-				FE13539F1C06EA7300A3DEE8 /* RegisterViewController.m in Sources */,
+				FE01E5361C0EA48500D24CDE /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

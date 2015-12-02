@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--通讯-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommunicationViewController" id="9pv-A4-QxB" userLabel="通讯" customClass="CommunicationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -45,10 +45,46 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--生活-->
+        <scene sceneID="A3R-CL-aeP">
+            <objects>
+                <viewController storyboardIdentifier="LifeViewController" id="0QF-EG-Xup" userLabel="生活" customClass="LifeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HqV-EM-rwA"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Y4-LV-kRw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1yY-Yg-LL4">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="51f-aX-XYm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOC-IR-4Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="-320"/>
+        </scene>
+        <!--资料-->
+        <scene sceneID="ixD-cQ-kef">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="jat-4X-L3k" userLabel="资料" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFs-nH-E0y"/>
+                        <viewControllerLayoutGuide type="bottom" id="NsQ-L1-Pdh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yxG-DI-22l">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="5fC-m5-jor"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixY-uq-eNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="360"/>
+        </scene>
+        <!--关系-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RelationshipViewController" id="8rJ-Kc-sve" userLabel="关系" customClass="RelationshipViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -110,6 +146,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mBz-Df-jeM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h48-eP-DS1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWz-l5-0Ab">
@@ -200,6 +237,7 @@
                         <viewControllerLayoutGuide type="bottom" id="V1x-xw-vJb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="86P-sQ-tSK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-4q-ck8">
@@ -296,6 +334,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Aaz-Qe-7Rx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HFw-St-U45">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -318,6 +357,8 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="0QF-EG-Xup" kind="relationship" relationship="viewControllers" id="6q9-Dk-6XO"/>
+                        <segue destination="jat-4X-L3k" kind="relationship" relationship="viewControllers" id="Djt-s9-DHf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
