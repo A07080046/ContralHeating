@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LifeViewController : UIViewController
+@interface LifeViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 @end

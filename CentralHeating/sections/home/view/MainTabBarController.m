@@ -31,7 +31,7 @@
         } else if (i == 2) {
             item.title = @"生活";
         } else if (i == 3) {
-            item.title = @"发现";
+            item.title = @"资料";
         }
         item.image = [UIImage imageNamed:@"winer"];
         item.selectedImage = [UIImage imageNamed:@"vip"];

@@ -27,13 +27,16 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden = true;
+//    self.navigationController.navigationBarHidden = true;
 }
 
 - (IBAction)clickCommit {
 //    GET2(ROUTE_TEST);
 //    NSDictionary *parameters = [[NSDictionary alloc]initWithObjectsAndKeys: @"", @"userId",nil];
 //    POST2(ROUTE_TEST, parameters);
-    [self.navigationController pushViewController: [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"] animated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:NO];
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"MainTabBarController"];
+    controller.navigationItem.hidesBackButton = YES;
+    [self.navigationController pushViewController:controller animated:YES];
 }
 @end
