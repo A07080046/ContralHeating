@@ -12,6 +12,10 @@
 		FE01E5361C0EA48500D24CDE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5311C0EA48500D24CDE /* LoginViewController.m */; };
 		FE01E5371C0EA48500D24CDE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5331C0EA48500D24CDE /* RegisterViewController.m */; };
 		FE01E5381C0EA48500D24CDE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5351C0EA48500D24CDE /* RootViewController.m */; };
+		FE01E54B1C0EC00500D24CDE /* CommunicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E54A1C0EC00500D24CDE /* CommunicationViewController.m */; };
+		FE01E54E1C0EC01C00D24CDE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E54D1C0EC01C00D24CDE /* DetailViewController.m */; };
+		FE01E5511C0EC03100D24CDE /* LifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5501C0EC03100D24CDE /* LifeViewController.m */; };
+		FE01E5541C0EC05500D24CDE /* RelationshipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE01E5531C0EC05500D24CDE /* RelationshipViewController.m */; };
 		FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1353941C06920A00A3DEE8 /* WebAPI.m */; };
 		FE2D71F41C05A73100678497 /* CentralHeatingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71F31C05A73100678497 /* CentralHeatingTests.m */; };
 		FE2D71FF1C05A73100678497 /* CentralHeatingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2D71FE1C05A73100678497 /* CentralHeatingUITests.m */; };
@@ -51,6 +55,14 @@
 		FE01E5331C0EA48500D24CDE /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		FE01E5341C0EA48500D24CDE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FE01E5351C0EA48500D24CDE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FE01E5491C0EC00500D24CDE /* CommunicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunicationViewController.h; sourceTree = "<group>"; };
+		FE01E54A1C0EC00500D24CDE /* CommunicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunicationViewController.m; sourceTree = "<group>"; };
+		FE01E54C1C0EC01C00D24CDE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FE01E54D1C0EC01C00D24CDE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FE01E54F1C0EC03100D24CDE /* LifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeViewController.h; sourceTree = "<group>"; };
+		FE01E5501C0EC03100D24CDE /* LifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeViewController.m; sourceTree = "<group>"; };
+		FE01E5521C0EC05500D24CDE /* RelationshipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelationshipViewController.h; sourceTree = "<group>"; };
+		FE01E5531C0EC05500D24CDE /* RelationshipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelationshipViewController.m; sourceTree = "<group>"; };
 		FE1353931C06920A00A3DEE8 /* WebAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAPI.h; sourceTree = "<group>"; };
 		FE1353941C06920A00A3DEE8 /* WebAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAPI.m; sourceTree = "<group>"; };
 		FE1353961C06929A00A3DEE8 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
@@ -184,6 +196,138 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		FE01E5391C0EBFAE00D24CDE /* communication */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E53A1C0EBFAE00D24CDE /* data */,
+				FE01E53B1C0EBFAE00D24CDE /* delegate */,
+				FE01E53C1C0EBFAE00D24CDE /* view */,
+			);
+			path = communication;
+			sourceTree = "<group>";
+		};
+		FE01E53A1C0EBFAE00D24CDE /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FE01E53B1C0EBFAE00D24CDE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		FE01E53C1C0EBFAE00D24CDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E5491C0EC00500D24CDE /* CommunicationViewController.h */,
+				FE01E54A1C0EC00500D24CDE /* CommunicationViewController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FE01E53D1C0EBFAE00D24CDE /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E53E1C0EBFAE00D24CDE /* data */,
+				FE01E53F1C0EBFAE00D24CDE /* delegate */,
+				FE01E5401C0EBFAE00D24CDE /* view */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		FE01E53E1C0EBFAE00D24CDE /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FE01E53F1C0EBFAE00D24CDE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		FE01E5401C0EBFAE00D24CDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E54C1C0EC01C00D24CDE /* DetailViewController.h */,
+				FE01E54D1C0EC01C00D24CDE /* DetailViewController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FE01E5411C0EBFAE00D24CDE /* life */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E5421C0EBFAE00D24CDE /* data */,
+				FE01E5431C0EBFAE00D24CDE /* delegate */,
+				FE01E5441C0EBFAE00D24CDE /* view */,
+			);
+			path = life;
+			sourceTree = "<group>";
+		};
+		FE01E5421C0EBFAE00D24CDE /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FE01E5431C0EBFAE00D24CDE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		FE01E5441C0EBFAE00D24CDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E54F1C0EC03100D24CDE /* LifeViewController.h */,
+				FE01E5501C0EC03100D24CDE /* LifeViewController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FE01E5451C0EBFAE00D24CDE /* relationship */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E5461C0EBFAE00D24CDE /* data */,
+				FE01E5471C0EBFAE00D24CDE /* delegate */,
+				FE01E5481C0EBFAE00D24CDE /* view */,
+			);
+			path = relationship;
+			sourceTree = "<group>";
+		};
+		FE01E5461C0EBFAE00D24CDE /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FE01E5471C0EBFAE00D24CDE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		FE01E5481C0EBFAE00D24CDE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FE01E5521C0EC05500D24CDE /* RelationshipViewController.h */,
+				FE01E5531C0EC05500D24CDE /* RelationshipViewController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		FE1353891C0690A700A3DEE8 /* net */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +429,10 @@
 		FE2D72101C05AA5C00678497 /* sections */ = {
 			isa = PBXGroup;
 			children = (
+				FE01E5391C0EBFAE00D24CDE /* communication */,
+				FE01E53D1C0EBFAE00D24CDE /* detail */,
+				FE01E5411C0EBFAE00D24CDE /* life */,
+				FE01E5451C0EBFAE00D24CDE /* relationship */,
 				FE01E5251C0EA2B500D24CDE /* home */,
 				FE01E5261C0EA2B500D24CDE /* login */,
 			);
@@ -467,10 +615,14 @@
 			files = (
 				FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */,
 				FE01E5381C0EA48500D24CDE /* RootViewController.m in Sources */,
+				FE01E5511C0EC03100D24CDE /* LifeViewController.m in Sources */,
+				FE01E54E1C0EC01C00D24CDE /* DetailViewController.m in Sources */,
 				FE01E5371C0EA48500D24CDE /* RegisterViewController.m in Sources */,
 				FE01E52F1C0EA42D00D24CDE /* MainTabBarController.m in Sources */,
 				FE2D721E1C05ABDA00678497 /* main.m in Sources */,
+				FE01E54B1C0EC00500D24CDE /* CommunicationViewController.m in Sources */,
 				FE2D721C1C05ABDA00678497 /* AppDelegate.m in Sources */,
+				FE01E5541C0EC05500D24CDE /* RelationshipViewController.m in Sources */,
 				FE01E5361C0EA48500D24CDE /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
