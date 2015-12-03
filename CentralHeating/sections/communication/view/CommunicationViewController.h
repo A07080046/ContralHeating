@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CommunicationViewController : UIViewController
+@interface CommunicationViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 @end
