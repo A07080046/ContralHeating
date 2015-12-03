@@ -56,7 +56,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-    //    [self.navigationController pushViewController:controller animated:YES];
+    [self.navigationController pushViewController: [[UIStoryboard storyboardWithName:@"CommunicationSub" bundle:nil]instantiateViewControllerWithIdentifier:@"ChatViewController"] animated:YES];
 }
 @end

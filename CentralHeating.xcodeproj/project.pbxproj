@@ -28,6 +28,7 @@
 		FE6A1FC61C0FE7F100B4E40B /* CommunicationSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC51C0FE7F100B4E40B /* CommunicationSub.storyboard */; };
 		FE6A1FC81C0FE80D00B4E40B /* RelationshipSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC71C0FE80D00B4E40B /* RelationshipSub.storyboard */; };
 		FE6A1FCA1C0FE82300B4E40B /* LifeSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC91C0FE82300B4E40B /* LifeSub.storyboard */; };
+		FE6A1FCD1C0FEA2D00B4E40B /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6A1FCC1C0FEA2D00B4E40B /* ChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		FE6A1FC51C0FE7F100B4E40B /* CommunicationSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommunicationSub.storyboard; sourceTree = "<group>"; };
 		FE6A1FC71C0FE80D00B4E40B /* RelationshipSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipSub.storyboard; sourceTree = "<group>"; };
 		FE6A1FC91C0FE82300B4E40B /* LifeSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LifeSub.storyboard; sourceTree = "<group>"; };
+		FE6A1FCB1C0FEA2D00B4E40B /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		FE6A1FCC1C0FEA2D00B4E40B /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,8 @@
 			children = (
 				FE01E5491C0EC00500D24CDE /* CommunicationViewController.h */,
 				FE01E54A1C0EC00500D24CDE /* CommunicationViewController.m */,
+				FE6A1FCB1C0FEA2D00B4E40B /* ChatViewController.h */,
+				FE6A1FCC1C0FEA2D00B4E40B /* ChatViewController.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -631,6 +636,7 @@
 			files = (
 				FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */,
 				FE01E5381C0EA48500D24CDE /* RootViewController.m in Sources */,
+				FE6A1FCD1C0FEA2D00B4E40B /* ChatViewController.m in Sources */,
 				FE01E5511C0EC03100D24CDE /* LifeViewController.m in Sources */,
 				FE01E54E1C0EC01C00D24CDE /* DetailViewController.m in Sources */,
 				FE01E5371C0EA48500D24CDE /* RegisterViewController.m in Sources */,
