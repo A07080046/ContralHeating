@@ -24,6 +24,10 @@
 		FE2D72201C05ABFE00678497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2D721F1C05ABFE00678497 /* Assets.xcassets */; };
 		FE2D72251C05AD1B00678497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D72231C05AD1B00678497 /* LaunchScreen.storyboard */; };
 		FE2D72261C05AD1B00678497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D72241C05AD1B00678497 /* Main.storyboard */; };
+		FE6A1FC41C0FE7DC00B4E40B /* DetailSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC31C0FE7DC00B4E40B /* DetailSub.storyboard */; };
+		FE6A1FC61C0FE7F100B4E40B /* CommunicationSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC51C0FE7F100B4E40B /* CommunicationSub.storyboard */; };
+		FE6A1FC81C0FE80D00B4E40B /* RelationshipSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC71C0FE80D00B4E40B /* RelationshipSub.storyboard */; };
+		FE6A1FCA1C0FE82300B4E40B /* LifeSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC91C0FE82300B4E40B /* LifeSub.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		FE2D721F1C05ABFE00678497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2D72231C05AD1B00678497 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE2D72241C05AD1B00678497 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE6A1FC31C0FE7DC00B4E40B /* DetailSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailSub.storyboard; sourceTree = "<group>"; };
+		FE6A1FC51C0FE7F100B4E40B /* CommunicationSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommunicationSub.storyboard; sourceTree = "<group>"; };
+		FE6A1FC71C0FE80D00B4E40B /* RelationshipSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipSub.storyboard; sourceTree = "<group>"; };
+		FE6A1FC91C0FE82300B4E40B /* LifeSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LifeSub.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +452,10 @@
 			children = (
 				FE2D72231C05AD1B00678497 /* LaunchScreen.storyboard */,
 				FE2D72241C05AD1B00678497 /* Main.storyboard */,
+				FE6A1FC31C0FE7DC00B4E40B /* DetailSub.storyboard */,
+				FE6A1FC51C0FE7F100B4E40B /* CommunicationSub.storyboard */,
+				FE6A1FC71C0FE80D00B4E40B /* RelationshipSub.storyboard */,
+				FE6A1FC91C0FE82300B4E40B /* LifeSub.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -554,7 +566,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2D72261C05AD1B00678497 /* Main.storyboard in Resources */,
+				FE6A1FC81C0FE80D00B4E40B /* RelationshipSub.storyboard in Resources */,
+				FE6A1FC61C0FE7F100B4E40B /* CommunicationSub.storyboard in Resources */,
 				FE2D72251C05AD1B00678497 /* LaunchScreen.storyboard in Resources */,
+				FE6A1FC41C0FE7DC00B4E40B /* DetailSub.storyboard in Resources */,
+				FE6A1FCA1C0FE82300B4E40B /* LifeSub.storyboard in Resources */,
 				FE2D72201C05ABFE00678497 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
