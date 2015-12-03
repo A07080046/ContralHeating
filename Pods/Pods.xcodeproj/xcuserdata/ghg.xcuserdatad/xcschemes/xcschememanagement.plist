@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MessagesTableViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CentralHeating.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>49C75BE5CCE0EBE630D0750DB621F27D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>82057390DB345E0F1367307EAFBB11A1</key>
+		<key>51A60838474E497B7A8057CE1CE1F12E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E5D381F5B6D12AC60557DB475063979</key>
+		<key>B5BEC8D5497BFFAB2D347DD4D129F1D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8472070DB8F6B1EBA5D49DA30BBA4C8</key>
+		<key>BA18BD39FC77BEF46FF342D77C50B8C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF0E9BE41CDDFE4A5E052BC8C956936E</key>
+		<key>BADC4992BB636C2406C6827A0BE17714</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EABD08A6C0DF1A7780A6F51F638BBBE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC4FF862EE978EC9DC4FCC9BABC0EF41</key>
 		<dict>
 			<key>primary</key>
 			<true/>

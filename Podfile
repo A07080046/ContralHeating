@@ -5,6 +5,7 @@ target 'CentralHeating' do
 pod 'AFNetworking', '~> 2.6.3'
 pod 'ICETutorial', '~> 1.1.1'
 pod 'XMPPFramework', '~> 3.6.6'
+pod 'MessagesTableViewController', '~> 1.0.0'
 end
 
 target 'CentralHeatingTests' do
