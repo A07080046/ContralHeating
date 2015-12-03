@@ -24,6 +24,8 @@
 		FE2D72201C05ABFE00678497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2D721F1C05ABFE00678497 /* Assets.xcassets */; };
 		FE2D72251C05AD1B00678497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D72231C05AD1B00678497 /* LaunchScreen.storyboard */; };
 		FE2D72261C05AD1B00678497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D72241C05AD1B00678497 /* Main.storyboard */; };
+		FE5290AD1C1035E10018BC4E /* ChatModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5290AC1C1035E10018BC4E /* ChatModelData.m */; };
+		FE5290B11C103B790018BC4E /* NSUserDefaults+ChatSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5290B01C103B790018BC4E /* NSUserDefaults+ChatSettings.m */; };
 		FE6A1FC41C0FE7DC00B4E40B /* DetailSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC31C0FE7DC00B4E40B /* DetailSub.storyboard */; };
 		FE6A1FC61C0FE7F100B4E40B /* CommunicationSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC51C0FE7F100B4E40B /* CommunicationSub.storyboard */; };
 		FE6A1FC81C0FE80D00B4E40B /* RelationshipSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC71C0FE80D00B4E40B /* RelationshipSub.storyboard */; };
@@ -86,6 +88,10 @@
 		FE2D721F1C05ABFE00678497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2D72231C05AD1B00678497 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE2D72241C05AD1B00678497 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE5290AB1C1035E10018BC4E /* ChatModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModelData.h; sourceTree = "<group>"; };
+		FE5290AC1C1035E10018BC4E /* ChatModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModelData.m; sourceTree = "<group>"; };
+		FE5290AF1C103B790018BC4E /* NSUserDefaults+ChatSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ChatSettings.h"; sourceTree = "<group>"; };
+		FE5290B01C103B790018BC4E /* NSUserDefaults+ChatSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ChatSettings.m"; sourceTree = "<group>"; };
 		FE6A1FC31C0FE7DC00B4E40B /* DetailSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailSub.storyboard; sourceTree = "<group>"; };
 		FE6A1FC51C0FE7F100B4E40B /* CommunicationSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommunicationSub.storyboard; sourceTree = "<group>"; };
 		FE6A1FC71C0FE80D00B4E40B /* RelationshipSub.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipSub.storyboard; sourceTree = "<group>"; };
@@ -210,6 +216,7 @@
 		FE01E5391C0EBFAE00D24CDE /* communication */ = {
 			isa = PBXGroup;
 			children = (
+				FE5290AE1C103B230018BC4E /* category */,
 				FE01E53A1C0EBFAE00D24CDE /* data */,
 				FE01E53B1C0EBFAE00D24CDE /* delegate */,
 				FE01E53C1C0EBFAE00D24CDE /* view */,
@@ -220,6 +227,8 @@
 		FE01E53A1C0EBFAE00D24CDE /* data */ = {
 			isa = PBXGroup;
 			children = (
+				FE5290AB1C1035E10018BC4E /* ChatModelData.h */,
+				FE5290AC1C1035E10018BC4E /* ChatModelData.m */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -465,6 +474,15 @@
 			path = storyboard;
 			sourceTree = "<group>";
 		};
+		FE5290AE1C103B230018BC4E /* category */ = {
+			isa = PBXGroup;
+			children = (
+				FE5290AF1C103B790018BC4E /* NSUserDefaults+ChatSettings.h */,
+				FE5290B01C103B790018BC4E /* NSUserDefaults+ChatSettings.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -635,6 +653,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */,
+				FE5290AD1C1035E10018BC4E /* ChatModelData.m in Sources */,
 				FE01E5381C0EA48500D24CDE /* RootViewController.m in Sources */,
 				FE6A1FCD1C0FEA2D00B4E40B /* ChatViewController.m in Sources */,
 				FE01E5511C0EC03100D24CDE /* LifeViewController.m in Sources */,
@@ -643,6 +662,7 @@
 				FE01E52F1C0EA42D00D24CDE /* MainTabBarController.m in Sources */,
 				FE2D721E1C05ABDA00678497 /* main.m in Sources */,
 				FE01E54B1C0EC00500D24CDE /* CommunicationViewController.m in Sources */,
+				FE5290B11C103B790018BC4E /* NSUserDefaults+ChatSettings.m in Sources */,
 				FE2D721C1C05ABDA00678497 /* AppDelegate.m in Sources */,
 				FE01E5541C0EC05500D24CDE /* RelationshipViewController.m in Sources */,
 				FE01E5361C0EA48500D24CDE /* LoginViewController.m in Sources */,

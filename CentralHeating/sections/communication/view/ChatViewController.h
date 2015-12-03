@@ -7,7 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSQMessages.h"
+#import "ChatModelData.h"
+#import "NSUserDefaults+ChatSettings.h"
 
-@interface ChatViewController : UIViewController
+
+@class ChatViewController;
+
+@protocol JSQDemoViewControllerDelegate <NSObject>
+
+- (void)didDismissJSQDemoViewController:(ChatViewController *)vc;
+
+@end
+
+
+
+
+@interface ChatViewController : JSQMessagesViewController <UIActionSheetDelegate, JSQMessagesComposerTextViewPasteDelegate>
+
+@property (weak, nonatomic) id<JSQDemoViewControllerDelegate> delegateModal;
+
+@property (strong, nonatomic) ChatModelData *chatData;
+
+- (void)receiveMessagePressed:(UIBarButtonItem *)sender;
+
+- (void)closePressed:(UIBarButtonItem *)sender;
 
 @end
