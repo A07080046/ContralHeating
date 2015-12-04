@@ -26,7 +26,8 @@
     [super viewDidLoad];
     
     self.title = @"JSQMessages";
-    
+    [NSUserDefaults saveIncomingAvatarSetting:YES];
+    [NSUserDefaults saveOutgoingAvatarSetting:YES];
     /**
      *  You MUST set your senderId and display name
      */
