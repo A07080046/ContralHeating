@@ -24,6 +24,7 @@
 		FE2D72201C05ABFE00678497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2D721F1C05ABFE00678497 /* Assets.xcassets */; };
 		FE2D72251C05AD1B00678497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D72231C05AD1B00678497 /* LaunchScreen.storyboard */; };
 		FE2D72261C05AD1B00678497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2D72241C05AD1B00678497 /* Main.storyboard */; };
+		FE384F1E1C16B547004B2730 /* ChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE384F1D1C16B547004B2730 /* ChatManager.m */; };
 		FE5290AD1C1035E10018BC4E /* ChatModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5290AC1C1035E10018BC4E /* ChatModelData.m */; };
 		FE5290B11C103B790018BC4E /* NSUserDefaults+ChatSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5290B01C103B790018BC4E /* NSUserDefaults+ChatSettings.m */; };
 		FE6A1FC41C0FE7DC00B4E40B /* DetailSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A1FC31C0FE7DC00B4E40B /* DetailSub.storyboard */; };
@@ -88,6 +89,8 @@
 		FE2D721F1C05ABFE00678497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2D72231C05AD1B00678497 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE2D72241C05AD1B00678497 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE384F1C1C16B547004B2730 /* ChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatManager.h; sourceTree = "<group>"; };
+		FE384F1D1C16B547004B2730 /* ChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManager.m; sourceTree = "<group>"; };
 		FE5290AB1C1035E10018BC4E /* ChatModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModelData.h; sourceTree = "<group>"; };
 		FE5290AC1C1035E10018BC4E /* ChatModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModelData.m; sourceTree = "<group>"; };
 		FE5290AF1C103B790018BC4E /* NSUserDefaults+ChatSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ChatSettings.h"; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 		FE01E53B1C0EBFAE00D24CDE /* delegate */ = {
 			isa = PBXGroup;
 			children = (
+				FE384F1C1C16B547004B2730 /* ChatManager.h */,
+				FE384F1D1C16B547004B2730 /* ChatManager.m */,
 			);
 			path = delegate;
 			sourceTree = "<group>";
@@ -654,6 +659,7 @@
 			files = (
 				FE1353951C06920A00A3DEE8 /* WebAPI.m in Sources */,
 				FE5290AD1C1035E10018BC4E /* ChatModelData.m in Sources */,
+				FE384F1E1C16B547004B2730 /* ChatManager.m in Sources */,
 				FE01E5381C0EA48500D24CDE /* RootViewController.m in Sources */,
 				FE6A1FCD1C0FEA2D00B4E40B /* ChatViewController.m in Sources */,
 				FE01E5511C0EC03100D24CDE /* LifeViewController.m in Sources */,

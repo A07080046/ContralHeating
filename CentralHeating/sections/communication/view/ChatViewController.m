@@ -7,6 +7,7 @@
 //
 
 #import "ChatViewController.h"
+#import "ChatManager.h"
 
 @implementation ChatViewController
 
@@ -24,8 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = @"JSQMessages";
+    ChatManager *mgr = [ChatManager sharedInstance];
+    [mgr tstconnect];
     [NSUserDefaults saveIncomingAvatarSetting:YES];
     [NSUserDefaults saveOutgoingAvatarSetting:YES];
     /**
