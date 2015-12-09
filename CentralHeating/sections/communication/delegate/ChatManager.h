@@ -40,6 +40,11 @@ typedef NS_ENUM(NSInteger, PRESENCE_TYPE)
     PT_OFFLINE //unavailable 离线
 };
 
+@protocol ChatDelegate <NSObject>
+@optional
+- (void)receiveMsgDE:(NSString *)info;
+@end
+
 @interface ChatManager : NSObject<XMPPStreamDelegate, XMPPRosterDelegate> {
     XMPPStream *xmppStream;
     XMPPReconnect *xmppReconnect;
@@ -62,11 +67,13 @@ typedef NS_ENUM(NSInteger, PRESENCE_TYPE)
 @property (nonatomic, strong, readonly) XMPPCapabilitiesCoreDataStorage *xmppCapabilitiesStorage;
 
 DECLARE_SINGLETON_FOR_CLASS(ChatManager)
+@property (nonatomic, assign)id<ChatDelegate>delegate;
 
 - (NSManagedObjectContext *)managedObjectContext_roster;
 - (NSManagedObjectContext *)managedObjectContext_capabilities;
 
 -(BOOL)tstconnect;
+- (void)sendMessage:(NSString *) text toUser:(NSString *) user;
 -(void)registerWithName:(NSString *)userName andPassword:(NSString *)password;
 -(void)loginwithName:(NSString *)userName andPassword:(NSString *)password;
 -(void)logout;

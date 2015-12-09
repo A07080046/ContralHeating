@@ -44,16 +44,6 @@ typedef NS_ENUM(NSInteger, EVENT_TYPE)
 
 SYNTHESIZE_SINGLETON_FOR_CLASS(ChatManager)
 
--(instancetype)init{
-    if ([super init]){
-        xmppStream = [[XMPPStream alloc] init];
-        xmppStream.hostName = XMPP_SERVER_HOST_NAME;
-        xmppStream.hostPort = XMPP_SERVER_PORT;
-        [xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
-    }
-    return self;
-}
-
 #pragma mark Core Data
 - (NSManagedObjectContext *)managedObjectContext_roster
 {
@@ -372,10 +362,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ChatManager)
 -(BOOL)tstconnect{
     
     xmppStream = [[XMPPStream alloc] init];
-    [xmppStream addDelegate:self delegateQueue:dispatch_get_current_queue()];
-    //从本地取得用户名，密码和服务器地址
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
+    [xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
     NSString *userId = @"user@imac.local";
     NSString *pass = @"admin";
     NSString *server = @"127.0.0.1";
@@ -443,11 +430,6 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ChatManager)
         }
         default:;
     }
-}
-
-- (void)xmppStreamWillConnect:(XMPPStream *)sender
-{
-
 }
 
 #pragma mark register
@@ -526,7 +508,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ChatManager)
     [body setStringValue:text];
     NSXMLElement *message = [NSXMLElement elementWithName:@"message"];
     [message addAttributeWithName:@"type" stringValue:@"chat"];
-    NSString *to = [NSString stringWithFormat:@"%@@example.com", user];
+    NSString *to = [NSString stringWithFormat:@"%@@imac.local", user];
     [message addAttributeWithName:@"to" stringValue:to];
     [message addChild:body];
     [xmppStream sendElement:message];
@@ -546,6 +528,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ChatManager)
         {
             NSString *text = [[message elementForName:@"body"] stringValue];
             NSLog(@"receive message from %@: %@", displayName, text);
+            if (self.delegate && [self.delegate respondsToSelector:@selector(receiveMsgDE:)]) {
+                [self.delegate receiveMsgDE:text];
+            }
         }
         else
         {

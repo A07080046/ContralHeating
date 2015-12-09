@@ -10,22 +10,22 @@
 #import "JSQMessages.h"
 #import "ChatModelData.h"
 #import "NSUserDefaults+ChatSettings.h"
-
+#import "ChatManager.h"
 
 @class ChatViewController;
 
-@protocol JSQDemoViewControllerDelegate <NSObject>
+@protocol ChatViewControllerDelegate <NSObject>
 
-- (void)didDismissJSQDemoViewController:(ChatViewController *)vc;
+- (void)didDismissChatViewController:(ChatViewController *)vc;
 
 @end
 
 
 
 
-@interface ChatViewController : JSQMessagesViewController <UIActionSheetDelegate, JSQMessagesComposerTextViewPasteDelegate>
+@interface ChatViewController : JSQMessagesViewController <UIActionSheetDelegate, JSQMessagesComposerTextViewPasteDelegate,ChatDelegate>
 
-@property (weak, nonatomic) id<JSQDemoViewControllerDelegate> delegateModal;
+@property (weak, nonatomic) id<ChatViewControllerDelegate> delegateModal;
 
 @property (strong, nonatomic) ChatModelData *chatData;
 
