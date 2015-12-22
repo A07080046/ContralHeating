@@ -505,12 +505,24 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ChatManager)
 #pragma mark message
 - (void)sendMessage:(NSString *) text toUser:(NSString *) user {
     NSXMLElement *body = [NSXMLElement elementWithName:@"body"];
+//    XMPPElement *textment = [XMPPElement elementWithName:@"textment" stringValue:text];
     [body setStringValue:text];
+//    [body addChild:textment];
+//    NSData *data = UIImagePNGRepresentation([UIImage imageNamed:@"goldengate"]);
+//    // 转换成base64的编码
+//    NSString *base64str = [data base64EncodedStringWithOptions:0];
+//    //    [message addAttributeWithName:@"image" stringValue:base64str];
+//    NSXMLElement *image = [NSXMLElement elementWithName:@"image"];
+//    [image setStringValue:base64str];
+    
     NSXMLElement *message = [NSXMLElement elementWithName:@"message"];
     [message addAttributeWithName:@"type" stringValue:@"chat"];
     NSString *to = [NSString stringWithFormat:@"%@@imac.local", user];
     [message addAttributeWithName:@"to" stringValue:to];
     [message addChild:body];
+//    [message addChild:image];
+    
+
     [xmppStream sendElement:message];
 }
 
@@ -542,6 +554,89 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ChatManager)
             [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
         }
     }
+}
+
+#pragma mark friends
+- (void)getFriendList
+{
+    [xmppRoster fetchRoster];//获取好友列表
+}
+
+//获取到一个好友节点
+- (void)xmppRoster:(XMPPRoster *)sender didRecieveRosterItem:(NSXMLElement *)item
+{
+
+}
+
+//获取完好友列表
+- (void)xmppRosterDidEndPopulating:(XMPPRoster *)sender
+{
+
+}
+
+//到服务器上请求联系人名片信息
+- (void)fetchvCardTempForJID:(XMPPJID *)jid
+{
+
+}
+
+//请求联系人的名片，如果数据库有就不请求，没有就发送名片请求
+- (void)fetchvCardTempForJID:(XMPPJID *)jid ignoreStorage:(BOOL)ignoreStorage
+{
+
+}
+
+//获取联系人的名片，如果数据库有就返回，没有返回空，并到服务器上抓取
+- (XMPPvCardTemp *)vCardTempForJID:(XMPPJID *)jid shouldFetch:(BOOL)shouldFetch
+{
+    return nil;
+}
+
+//更新自己的名片信息
+- (void)updateMyvCardTemp:(XMPPvCardTemp *)vCardTemp
+{
+
+}
+
+//获取到一盒联系人的名片信息的回调
+- (void)xmppvCardTempModule:(XMPPvCardTempModule *)vCardTempModule
+        didReceivevCardTemp:(XMPPvCardTemp *)vCardTemp
+                     forJID:(XMPPJID *)jid
+{
+
+}
+
+//name为用户账号
+- (void)XMPPAddFriendSubscribe:(NSString *)name
+{
+    //XMPPHOST 就是服务器名，  主机名
+    XMPPJID *jid = [XMPPJID jidWithString:[NSString stringWithFormat:@"%@@%@",name,@"imac.local"]];
+    //[presence addAttributeWithName:@"subscription" stringValue:@"好友"];
+    [xmppRoster subscribePresenceToUser:jid];
+    
+}
+
+- (void)xmppRoster:(XMPPRoster *)sender didReceivePresenceSubscriptionRequest:(XMPPPresence *)presence
+{
+    //取得好友状态
+    NSString *presenceType = [NSString stringWithFormat:@"%@", [presence type]]; //online/offline
+    //请求的用户
+    NSString *presenceFromUser =[NSString stringWithFormat:@"%@", [[presence from] user]];
+    NSLog(@"presenceType:%@",presenceType);
+    
+    NSLog(@"presence2:%@  sender2:%@",presence,sender);
+    
+    XMPPJID *jid = [XMPPJID jidWithString:presenceFromUser];
+    //接收添加好友请求
+    [xmppRoster acceptPresenceSubscriptionRequestFrom:jid andAddToRoster:YES];
+    
+}
+
+- (void)removeBuddy:(NSString *)name
+{
+    XMPPJID *jid = [XMPPJID jidWithString:[NSString stringWithFormat:@"%@@%@",name,@"imac.local"]];
+    
+    [xmppRoster removeUser:jid];
 }
 
 
